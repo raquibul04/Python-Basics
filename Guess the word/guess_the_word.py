@@ -5,12 +5,12 @@ countries = ["United States", "Canada", "United Kingdom", "Germany", "Bangladesh
 
 chosen_word = random.choice(countries).lower()
 print(chosen_word)
-quiz = " - " * len(chosen_word)
-print(quiz)
-
 guess = input("Take a guess. Give me a letter from the Alphabet\n").lower()
 for letter in chosen_word:
     if letter == guess:
         print("Right")
     else:
         print("Wrong")
+
+placeholder = ' _ ' * len(chosen_word)
+print(placeholder)
