@@ -1,5 +1,60 @@
 import random
-from random import sample
+stages = [r'''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+''', r'''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+''', r'''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''']
 lives = 6
 countries = ["Canada", "Germany", "Bangladesh", "Japan", "Australia"]
 placeholder = ""
@@ -31,4 +86,4 @@ while not game_over:
     if "_" not in display:
         game_over = True
     lives -= 1
-
+    print(stages[lives])
