@@ -9,4 +9,4 @@ def my_function(a):
         return "Great"
 print(my_function(25))
 
-#practice test
+#practice test_01
